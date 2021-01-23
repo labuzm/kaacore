@@ -76,6 +76,9 @@ class Engine {
     VirtualResolutionMode virtual_resolution_mode() const;
     void virtual_resolution_mode(const VirtualResolutionMode vr_mode);
 
+    bool vertical_sync() const;
+    void vertical_sync(const bool vsync);
+
     double get_fps() const;
     std::vector<Display> get_displays();
     std::filesystem::path get_writable_path(
